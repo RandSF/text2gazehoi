@@ -1,0 +1,12 @@
+model_name: classifier_gaze_min3
+# use_cond_fc: True
+# use_obj_scale_centroid: True
+# zero_initialized: True
+# global_feat: True
+# feature_transform: False
+# in_dim: 4
+iteration: 1000
+lambda_ce: 1.0
+lr: 0.001
+save_root: outputs/${classifier.model_name}
+weight_path: checkpoints/${dataset.name}/${classifier.model_name}.pth

@@ -1,0 +1,11 @@
+checkpoints
+data
+demo_output
+outputs
+IMOS
+lib_bck
+train_bck
+
+__pycache__
+*.pyc
+wandb

@@ -1,0 +1,1 @@
+python train/eval.py batch_size=64 +ckpt_path=/home/acc/hot3d/Text2HOI/outputs/classifier/model/

@@ -1,0 +1,31 @@
+defaults:
+  - dataset: hot3d
+  - clip: clip
+  - diffusion: diffusion
+  - mpnet: mpnet
+  - seq_cvae: seq_cvae
+  - pointfeat: pointfeat
+  - contact: contact
+  - texthom: texthom
+  - refiner: refiner
+  - classifier: classifier
+project_name: "texthom"
+batch_size: 2 # 64, 512
+accumulate_step: 16
+shuffle: True
+drop_last: True
+num_workers: 4
+result_show_freq: 50
+save_pth_freq: 10
+text: ["pick up the puzzle toy with the right hand, play the toy with both hands"]
+save_demo: False
+save_obj: False
+balance_weights: True
+fps: 30
+max_frames: 300
+wandb_key: f9e1edaeaeef4fef535a04b1b7e3a3ba15d1a663
+
+hydra:
+  run:
+    dir: outputs/${texthom.model_name}/
+  # output_subdir: null

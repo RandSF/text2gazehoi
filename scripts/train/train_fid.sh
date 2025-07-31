@@ -1,0 +1,1 @@
+python train/train_fid_pure.py dataset=h2o save_pth_freq=10 batch_size=128
