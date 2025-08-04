@@ -10,13 +10,13 @@ defaults:
   - refiner: refiner
   - classifier: classifier
 project_name: "texthom"
-batch_size: 1 # 64, 512
-accumulate_step: 16
+batch_size: 16 # 64, 512
+accumulate_step: 1
 shuffle: True
 drop_last: True
 num_workers: 4
 result_show_freq: 50
-save_pth_freq: 10
+save_pth_freq: 1000
 text: ["pick up the puzzle toy with the right hand, play the toy with both hands"]
 save_demo: False
 save_obj: False

@@ -1,4 +1,4 @@
-model_name: contact_estimator_gt_active
+model_name: contact_estimator
 latent_dim: 64
 cond_dim: 1601
 use_scale: True
@@ -10,4 +10,4 @@ test_iteration: 1
 iteration: 10000
 lr: 0.001
 save_root: data/networks/contact_estimator/${dataset.name}
-weight_path: checkpoints/${dataset.name}/${contact.model_name}.pth
+weight_path: checkpoints/${dataset.name}/${contact.model_name}_best.pth

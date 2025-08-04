@@ -1,4 +1,4 @@
-model_name: refiner_gt_active
+model_name: refiner
 hand_input_nfeats: 12513 # 2273 # 
 hand_output_nfeats: 99 # 99 # 3 + 16*6
 latent_dim: 512
@@ -23,4 +23,4 @@ lambda_simple: 1.0 # 0 1
 lambda_penet: 1.0
 lambda_contact: 5.0
 save_root: outputs/${refiner.model_name}
-weight_path: checkpoints/${dataset.name}/${refiner.model_name}.pth
+weight_path: checkpoints/${dataset.name}/${refiner.model_name}_best.pth

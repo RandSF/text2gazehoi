@@ -7,4 +7,4 @@ final_sigmoid: True
 iteration: 1000
 lr: 0.001
 save_root: outputs/${seq_cvae.model_name}
-weight_path: checkpoints/${dataset.name}/${seq_cvae.model_name}.pth
+weight_path: checkpoints/${dataset.name}/${seq_cvae.model_name}_best.pth

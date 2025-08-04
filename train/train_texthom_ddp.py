@@ -213,7 +213,7 @@ def main(config):
                         "ro_loss": loss_rot_meter.avg,
                     }
                 )
-            pbar.set_description(f"{model_name} | Best loss: {best_loss:.4f} ({best_epoch}), Cur loss: {cur_loss:.4f}")
+                pbar.set_description(f"{model_name} | Best loss: {best_loss:.4f} ({best_epoch}), Cur loss: {cur_loss:.4f}")
             
             if (epoch+1)%config.save_pth_freq==0:
                 if dist.get_rank() == 0:
