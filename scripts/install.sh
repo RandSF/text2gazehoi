@@ -1,5 +1,5 @@
-conda create -n text2hoi python=3.8 -y
-conda activate text2hoi
+conda create -n text2gazehoi python=3.8 -y
+conda activate text2gazehoi
 
 pip install pyyaml==6.0.1
 
