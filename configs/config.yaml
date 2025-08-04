@@ -10,7 +10,7 @@ defaults:
   - refiner: refiner
   - classifier: classifier
 project_name: "texthom"
-batch_size: 2 # 64, 512
+batch_size: 1 # 64, 512
 accumulate_step: 16
 shuffle: True
 drop_last: True

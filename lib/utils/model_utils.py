@@ -7,7 +7,7 @@ import torch
 import torch.nn as nn
 
 from lib.networks.cvae import SeqCVAE, CTCVAE
-from lib.networks.texthom import TextHOM
+# from lib.networks.texthom import TextHOM
 from lib.networks.refiner import Refiner
 from lib.networks.diffusion import Diffusion
 from lib.networks.pointnet import PointNetfeat
@@ -49,6 +49,7 @@ def build_refiner(args, test=False):
 def build_model_and_diffusion(args, lhand_layer, rhand_layer, test=False):
     args_texthom = args.texthom
     args_diffusion = args.diffusion
+    from lib.networks.texthom_short import TextHOM
     texthom = TextHOM(**args_texthom)
     diffusion = Diffusion(
         lhand_layer=lhand_layer, 

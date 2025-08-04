@@ -385,6 +385,6 @@ class MotionHOT3D(BaseHOT3D):
         cov_map = (lcov_map+rcov_map)>0
         item["cov_map"] = cov_map.astype(np.float32)
 
-        active_flag = (np.max(cov_map, axis=-1) > 0)
+        active_flag = np.logical_or(rdist_map>0, ldist_map>0).max(axis=-1).max(axis=-1)
         item['active_flag'] = active_flag.astype(np.float32)
         return item

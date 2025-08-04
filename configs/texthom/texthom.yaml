@@ -1,4 +1,4 @@
-model_name: texthom_gt_active
+model_name: texthom_short
 hand_nfeats: 99 # 3 + 16*6
 obj_nfeats: 9 # 3 + 6
 latent_dim: 512
